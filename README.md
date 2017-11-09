@@ -18,10 +18,9 @@ To install, run the following from your terminal: (you may want to backup your
 existing `~/.tmux.conf` first)
 
 ```
-$ cd
-$ git clone https://github.com/gpakosz/.tmux.git
-$ ln -s -f .tmux/.tmux.conf
-$ cp .tmux/.tmux.conf.local .
+$ git clone https://github.com/davidecaruso/.tmux.git
+$ ln -s -f .tmux/.tmux.conf ~/.tmux.conf
+$ ln -s -f .tmux/.tmux.conf.local ~/.tmux.conf.local
 ```
 
 Then proceed to [customize] your `~/.tmux.conf.local` copy.
@@ -36,6 +35,8 @@ Development][bhtmux2] by [@bphogan].
 
 [bhtmux2]: https://pragprog.com/book/bhtmux2/tmux-2
 [@bphogan]: https://twitter.com/bphogan
+
+> Note: to reload you conf file run `tmux source-file ~/.tmux.conf`.
 
 Troubleshooting
 ---------------
